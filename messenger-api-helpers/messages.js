@@ -41,7 +41,7 @@ const setPreferencesButton = {
  */
 const viewDetailsButton = (giftId) => {
   return {
-    title: '查看/修改預約',
+    title: '查看預約',
     type: 'web_url',
     url: `${SERVER_URL}/gifts/${giftId}`,
     webview_height_ratio: 'tall',
@@ -55,7 +55,7 @@ const viewDetailsButton = (giftId) => {
 const chooseGiftButton = (giftId) => {
   return {
     type: 'postback',
-    title: 'Choose This Gift',
+    title: '選擇此時段',
     payload: JSON.stringify({
       type: 'CHOOSE_GIFT',
       data: {
@@ -70,7 +70,7 @@ const chooseGiftButton = (giftId) => {
  */
 const changeGiftButton = {
   type: 'postback',
-  title: 'Change Gift',
+  title: '修改預約',
   payload: JSON.stringify({
     type: 'CHANGE_GIFT',
   }),
