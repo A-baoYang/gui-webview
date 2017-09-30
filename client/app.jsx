@@ -339,7 +339,7 @@ export default class App extends React.PureComponent {
     return (
       <div className='app'>
         <section>
-          <CellsTitle>Date of Birth</CellsTitle>
+          <CellsTitle>用餐日期</CellsTitle>
           <Form>
             <FormCell select id='date-of-birth'>
               <CellHeader id='display-date'>

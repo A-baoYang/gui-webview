@@ -30,9 +30,9 @@ const SERVER_URL = process.env.SERVER_URL;
  */
 const setPreferencesButton = {
   type: 'web_url',
-  title: 'Set Gift Preferences',
+  title: '預約餐廳',
   url: `${SERVER_URL}/`,
-  webview_height_ratio: 'tall',
+  webview_height_ratio: 'full',
   messenger_extensions: true,
 };
 
@@ -41,10 +41,10 @@ const setPreferencesButton = {
  */
 const viewDetailsButton = (giftId) => {
   return {
-    title: 'View Details',
+    title: '查看/修改預約',
     type: 'web_url',
     url: `${SERVER_URL}/gifts/${giftId}`,
-    webview_height_ratio: 'compact',
+    webview_height_ratio: 'tall',
     messenger_extensions: true,
   };
 };
